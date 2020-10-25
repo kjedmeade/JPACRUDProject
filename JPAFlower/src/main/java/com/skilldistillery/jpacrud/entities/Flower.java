@@ -27,6 +27,36 @@ public class Flower {
 			super();
 		}
 
+		
+		public Flower(int id, String name, String pronounciation, String family, Integer noOfSpecies, String type,
+				String exampleSpecies) {
+			super();
+			this.id = id;
+			this.name = name;
+			this.pronounciation = pronounciation;
+			this.family = family;
+			this.noOfSpecies = noOfSpecies;
+			this.type = type;
+			this.exampleSpecies = exampleSpecies;
+		}
+		
+		public Flower(String name, String pronounciation, String family, Integer noOfSpecies, String type,
+				String exampleSpecies) {
+			super();
+		
+			this.name = name;
+			this.pronounciation = pronounciation;
+			this.family = family;
+			this.noOfSpecies = noOfSpecies;
+			this.type = type;
+			this.exampleSpecies = exampleSpecies;
+		}
+
+
+
+		
+
+
 		public int getId() {
 			return id;
 		}

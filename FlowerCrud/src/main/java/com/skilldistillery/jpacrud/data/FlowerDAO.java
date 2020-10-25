@@ -12,7 +12,7 @@ public interface FlowerDAO {
 
 	Flower createFlower(Flower flower);
 
-	boolean deleteFlower(Flower flower);
+	boolean deleteFlower(Integer id);
 
 	List<Flower> listAll();
 		

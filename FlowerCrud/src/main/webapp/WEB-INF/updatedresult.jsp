@@ -11,7 +11,7 @@
 <p> ${updatedFlower.type}</p>
 <p> ${updatedFlower.exampleSpecies}</p>
 
-<!-- <a href = "/">Return to homepage</a> -->
+<a href = "/">Return to homepage</a> 
 
 </body>
 </html> 

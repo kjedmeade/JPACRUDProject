@@ -53,7 +53,8 @@ public class FlowerDAOImpl implements FlowerDAO{
 
 	
 	@Override
-	public boolean deleteFlower(Flower flower) {
+	public boolean deleteFlower(Integer id) {
+		Flower flower = em.find(Flower.class, id);
 		em.remove(flower);
 		boolean flowerRemoved = !em.contains(flower);
 		// TODO Auto-generated method stub
@@ -62,7 +63,6 @@ public class FlowerDAOImpl implements FlowerDAO{
 	}
 
 
-	
 	@Override
 	public List<Flower> listAll() {
 		List <Flower> flowerList= null;

@@ -50,10 +50,6 @@ class FlowerTest {
 			assertEquals(33, flower.getNoOfSpecies());
 			assertEquals("perennial", flower.getType());
 			assertEquals("Paeonia algeriensis", flower.getExampleSpecies());
-		
-			
-
-
 		}
 	}
 

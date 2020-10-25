@@ -1,34 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>    
+    
+<!DOCTYPE html>
+<html>
+<head>
 <meta charset="UTF-8">
-<title>Home Page</title>
+<title>Flower Deleted</title>
 </head>
 <body>
-<h1> Flowers </h1>
 
-<h1> ${flower.name}</h1>
-<p> ${flower.pronounciation}</p>
-<p> ${flower.family}</p>
-<p> ${flower.noOfSpecies}</p>
-<p> ${flower.type}</p>
-<p> ${flower.exampleSpecies}</p>
 
-<form action="UpdateFlower.do" method="GET">
-<ul>
- Enter a new Name <li><input type="text" name="name" required="required" /></li>
- Enter a new pronounciation <li><input type="text" name="pronounciation" required="required"/></li>
- Enter a new family <li><input type="text" name="family" required="required"/></li>
- Enter a new Number of Species <li><input type="text" name="noOfSpecies" required="required"/></li>
- Enter a new Type <li><input type="text" name="type" required="required"/></li>
- Enter a new Example Species <li><input type="text" name="exampleSpecies" required="required"/></li>
 
-  <input type="submit" value="Update" />
-  </ul>
- </form>
+<!-- CONFIRM FILM deleted -->
+	<c:choose>
+    <c:when test="${flowerDeleted}">
+    <p> The selected flower was deleted.<p>
+     </c:when>
+    <c:otherwise>
+      <p>The selected Flower was not  deleted.</p>
+    </c:otherwise>
+  </c:choose>
   
-<form action="DeleteGivenFlower.do" method="GET">
-  Delete this flower  <input type="text" name="id"  value ="${flower.id}"/>
-  <input type="submit" value="Delete " />
-
-</form>
-
-</body>
-</html> 
+    <a href = "/"> Return to homepage</a>
+   </body>  
+      </head>
+    </html>

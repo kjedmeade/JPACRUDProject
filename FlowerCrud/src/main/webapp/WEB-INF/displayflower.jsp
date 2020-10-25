@@ -11,25 +11,24 @@
 <p> ${flower.type}</p>
 <p> ${flower.exampleSpecies}</p>
 
-<form action="UpdateFlower.do" method="POST">
+<form action="UpdateFlower.do" method="GET">
 <ul>
-
+<li> ID to update<input type="text" name="id" value ="${flower.id}"/></li>
 <li> Enter a new Name <input type="text" name="name" required="required" /></li>
 <li> Enter a new pronounciation <input type="text" name="pronounciation" required="required"/></li>
 <li> Enter a new family <input type="text" name="family" required="required"/></li>
 <li> Enter a new Number of Species <input type="text" name="noOfSpecies" required="required"/></li>
 <li> Enter a new Type <input type="text" name="type" required="required"/></li>
 <li> Enter a new Example Species <input type="text" name="exampleSpecies" required="required"/></li>
-<li> ID to update<input type="text" name="idToUpdate" value ="${flower.id}"/></li>
  <input type="submit" value="Update" />
   </ul>
  </form>
   
-<%-- <form action="DeleteGivenFlower.do" method="GET">
-  Delete this flower  <input type="text" name="id"  value ="${flower.id}"/>
+<form action="DeleteGivenFlower.do" method="GET">
+  Delete this flower  <input type="radio" name="id"  value ="${flower.id}"/>
   <input type="submit" value="Delete " />
 
-</form> --%>
+</form> 
 
 </body>
 </html> 
