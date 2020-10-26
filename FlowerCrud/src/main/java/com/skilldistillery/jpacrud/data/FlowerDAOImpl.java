@@ -21,12 +21,14 @@ public class FlowerDAOImpl implements FlowerDAO{
 
 
 
+	
 	@Override
 	public Flower findById(Integer id) {
 		return em.find(Flower.class, id);
 		// TODO Auto-generated method stub
 	
 	}
+
 	@Override
 	public Flower updateById(Integer id, Flower flower) {
 		Flower flowerToUpdate = em.find(Flower.class, id);
@@ -35,12 +37,13 @@ public class FlowerDAOImpl implements FlowerDAO{
 		flowerToUpdate.setFamily(flower.getFamily());
 		flowerToUpdate.setNoOfSpecies(flower.getNoOfSpecies());
 		flowerToUpdate.setExampleSpecies(flower.getExampleSpecies());
-		
+		em.flush();
 		return flowerToUpdate;
 		// TODO Auto-generated method stub
 		
 	}
 	
+
 
 
 	@Override
