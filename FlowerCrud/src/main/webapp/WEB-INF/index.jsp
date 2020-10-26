@@ -20,7 +20,7 @@ Find a Flower by it's id <input type="text" name="fid" />
 <table>
 <c:forEach var="flowerIndiv" items="${flowerList}">
 <tr>
-<td> <input type="radio" name = "fid" value= "${flowerIndiv.id}" />${flowerIndiv.name}<td>
+<td> <input type="radio" name = "fid" value= "${flowerIndiv.id}" /> ${flowerIndiv.name}<td>
  </tr>
  <tr>
 </c:forEach>

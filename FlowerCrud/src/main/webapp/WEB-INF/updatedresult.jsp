@@ -9,10 +9,8 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
-<h1> View Flowers </h1>
-<h1> Flowers </h1>
 
-<h1>Updated name: ${updatedFlower.name}</h1>
+<h4>Updated name: ${updatedFlower.name}</h4>
 <p> Updated pronounciation: ${updatedFlower.pronounciation}</p>
 <p> Updated family: ${updatedFlower.family}</p>
 <p> Updated number of species: ${updatedFlower.noOfSpecies}</p>
