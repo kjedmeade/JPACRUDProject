@@ -51,7 +51,6 @@ class FlowerCrudApplicationTests {
 
 	@Test
 	void test_flower_entity_mapping() {
-		assertNotNull(flowerDao);
-		assertEquals("Peony", flowerDao.findById(0).getName());
+		assertEquals("Dahlia", flowerDao.findById(8).getName());
 	}
 }

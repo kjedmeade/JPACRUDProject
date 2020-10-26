@@ -20,27 +20,26 @@ Find a Flower by it's id <input type="text" name="fid" />
 <table>
 <c:forEach var="flowerIndiv" items="${flowerList}">
 <tr>
-
-<td> ${flowerIndiv.name}<input type="radio" name = "fid" value= "${flowerIndiv.id}" />
- <input type="submit" value="Get Info" />
+<td> <input type="radio" name = "fid" value= "${flowerIndiv.id}" />${flowerIndiv.name}<td>
  </tr>
  <tr>
-
 </c:forEach>
 </table>
+<input type="submit" value="Get Info" />
 </form>
-
+<br>
+<br>
 <h4>Create New Flower</h4>
 <form action="CreateNewFlower.do" method="GET">
-<table></table>
-<tr> Enter a Name <li><input type="text" name="name" required="required" /></tr> 
- <tr> Enter a pronounciation <li><input type="text" name="pronounciation" required="required"/></tr> 
-<tr>  Enter a family <li><input type="text" name="family" required="required"/></tr> 
-  <tr>Enter a Species count <li><input type="text" name="noOfSpecies" required="required"/></tr> 
-  <tr>Enter a Type <li><input type="text" name="type" required="required"/></tr> 
-  <tr>Enter a Example Species <li><input type="text" name="exampleSpecies" required="required"/></tr> 
+<table>
+<tr> <td>Enter a name <input type="text" name="name" required="required" /></td></tr> 
+ <tr><td> Enter a pronounciation<input type="text" name="pronounciation" required="required" /><td></tr> 
+<tr><td> Enter a family <input type="text" name="family" required="required"/></td></tr> 
+  <tr><td>Enter a species count<input type="number" name="noOfSpecies" required="required" /></td></tr> 
+  <tr><td>Enter a type <input type="text" name="type" required="required" /></td></tr> 
+  <tr><td>Enter a example species <input type="text" name="exampleSpecies" required="required" /></td></tr> 
 
-  <input type="submit" value="Create" />
+  <tr><td> <input type="submit" value="Create" /> </tr></td>
 </table>
   </form> 
 
