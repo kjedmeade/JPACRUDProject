@@ -1,6 +1,6 @@
 ## JPACRUDProject
 
-This project highlights a few flowers that are great additions to a bouquet. A user can execute basic CRUD functions.
+This project highlights a few flowers that are great additions to a bouquet. A user can execute basic CRUD functions using the site.
 
 Technologies used:
 Java
@@ -11,7 +11,8 @@ Gradle
 Apache Tomcat 8.5
 MySQL
 MySQL Workbench
-AWS EC2, HTML
+AWS EC2
+HTML
 CSS
 XML
 Bootstrap
@@ -20,19 +21,17 @@ Github
 Eclipse
 Atom
 
-Database:
+* Database:
+The database used is collection of data on flowers. Information like name, family, number of species, type (perennial/annual), etc. are provided.
 
-The database used is a simple collection of flowers. Information like name, family, number of species, type (perennial/annual), etc. are included for each flower.
+* User interaction:
+The first page the user interacts with is the homepage. On this page the user can explore current flowers found in the database or add new flowers to the database.
 
-User interaction:
-The first page the user intracts with in the homepage that gived the user the option either explore currrent flowers in the database or add a new flower.
+If the user chooses to "Get info" on a flower, they are redirected to a new page where database information is provided for the flower chosen. On this page, the user is also given the the option to delete or edit the flower described.
 
-if the suer chooses to "Get info" on a flower, they are reditrecte to newer page where database ifnomation is provided for the flower choses. On that page the user is also gve tn the options to delete or edit a the flower.
+The user can enter information to create a new flower. Following submission of this information, the user is  redirected to a page that displays the new data just entered.
 
-if the user enters inforaion to freate a neaw flower follwoing submissen of the fomrm. the are redirecte da page that displays the ifnormation they just entered.
+A range of technologies were used in this project. The main classes/interfaces included an entity class for flowers in the database, a flower controller, a range of .jsp files, a DAO class, and a DAO interface. MySQLWorkBench was used to create the flower database.
 
-
-A range of technologies were used for this proejct. The main classes included an entity class for flowers in the databae, a flower controller, a range of .jsp files, a DAO and DAO Implemented.
-
-Lesson learned:
-I learned about how to enter information into a database using MySQLWorkBench. It was important that types of variables matched infromaton foudn int eh actural entity in the project. i also learned a bit more aboout how entity managers work and their role in managign database info.  
+## Lesson learned:
+I learned about how to enter information into a database using MySQLWorkBench. It was important that variables types in MySQLWorkBench matched variable types found in the actual entity class of the project. I also learned a bit more about how entity managers work and their role in managing databases.  
