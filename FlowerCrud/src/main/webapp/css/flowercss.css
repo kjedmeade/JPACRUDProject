@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.centered{
+	  text-align:center;
+    align:center;
+}
+
+.gray{
+	color:gray
+}

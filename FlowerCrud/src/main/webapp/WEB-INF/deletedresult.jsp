@@ -10,19 +10,24 @@
 </head>
 <body>
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <!-- CONFIRM FILM deleted -->
 	<c:choose>
     <c:when test="${flowerDeleted}">
-    <p> The selected flower was deleted<p>
+    <p style="text-align:center; color:gray"> The selected flower was deleted<p>
      </c:when>
     <c:otherwise>
-      <p>The selected flower was not deleted.</p>
+         <p style="text-align:center; color:gray"> The selected flower was not deleted.</p>
     </c:otherwise>
   </c:choose>
   
-    <a href = "/"> Return to homepage</a>
+    <div style="text-align:center"> <a href = "/"> RETURN TO HOMEPAGE</a></div>
   
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
